@@ -92,5 +92,38 @@
 				</plugins>
 			</build>
 		</profile>
+		<profile>
+                        <id>db-sandip-profile</id>
+                        <activation>
+                                <activeByDefault>true</activeByDefault>
+                        </activation>
+                        <build>
+                                <plugins>
+                                        <plugin>
+                                                <groupId>com.dbdeploy</groupId>
+                                                <artifactId>maven-dbdeploy-plugin</artifactId>
+                                                <executions>
+                                                        <execution>
+                                                                <id>db-id</id>
+                                                                <phase>install</phase>
+                                                                <goals>
+                                                                        <goal>db-scripts</goal>
+                                                                        <goal>update</goal>
+                                                                </goals>
+                                                                <configuration>
+                                                                        <url>jdbc:mysql://192.168.0.33:3306/my2db</url>
+                                                                        <userid>${userid2}</userid>
+                                                                        <password>${password2}</password>
+                                                                        <changeLogTableName>${changelog}</changeLogTableName>
+                                                                        <scriptdirectory>${patch_directory}</scriptdirectory>
+                                                                        <outputfile>${outputfile2}</outputfile>
+                                                                        <undoOutputfile>${undoOutputfile2}</undoOutputfile>
+                                                                </configuration>
+                                                        </execution>
+                                                </executions>
+                                        </plugin>
+                                </plugins>
+                        </build>
+                </profile>
 	</profiles>
 </project>
