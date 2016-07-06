@@ -78,7 +78,7 @@
 									<goal>update</goal>
 								</goals>
 								<configuration>
-									<url>jdbc:mysql://localhost:3306/mydb</url>
+									<url>${url}</url>
 									<userid>${userid}</userid>
 									<password>${password}</password>
 									<changeLogTableName>${changelog}</changeLogTableName>
@@ -111,7 +111,7 @@
                                                                         <goal>update</goal>
                                                                 </goals>
                                                                 <configuration>
-                                                                        <url>jdbc:mysql://192.168.0.33:3306/my2db</url>
+                                                                        <url>${url2}</url>
                                                                         <userid>${userid2}</userid>
                                                                         <password>${password2}</password>
                                                                         <changeLogTableName>${changelog}</changeLogTableName>
