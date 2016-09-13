@@ -1,0 +1,19 @@
+
+-- START CHANGE SCRIPT #105: 105_adding-new-table.sql
+
+CREATE TABLE PUNDIR (
+PUNDIR_ID INTEGER NOT NULL,
+PUNDIR_VALUE VARCHAR(30)
+);
+
+ALTER TABLE PUNDIR ADD CONSTRAINT PK_PUNDIR PRIMARY KEY (PUNDIR_ID);
+
+
+
+INSERT INTO CHANGELOG2 (change_number, complete_dt, applied_by, description)
+ VALUES (105, CURRENT_TIMESTAMP, USER(), '105_adding-new-table.sql');
+
+COMMIT;
+
+-- END CHANGE SCRIPT #105: 105_adding-new-table.sql
+

@@ -93,7 +93,7 @@
 			</build>
 		</profile>
 		<profile>
-                        <id>db-sandip-profile</id>
+                        <id>db-profile-two</id>
                         <activation>
                                 <activeByDefault>true</activeByDefault>
                         </activation>
@@ -114,8 +114,8 @@
                                                                         <url>${url2}</url>
                                                                         <userid>${userid2}</userid>
                                                                         <password>${password2}</password>
-                                                                        <changeLogTableName>${changelog}</changeLogTableName>
-                                                                        <scriptdirectory>${patch_directory}</scriptdirectory>
+                                                                        <changeLogTableName>${changelog2}</changeLogTableName>
+                                                                        <scriptdirectory>${patch_directory2}</scriptdirectory>
                                                                         <outputfile>${outputfile2}</outputfile>
                                                                         <undoOutputfile>${undoOutputfile2}</undoOutputfile>
                                                                 </configuration>

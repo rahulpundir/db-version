@@ -1,0 +1,15 @@
+
+-- START UNDO OF CHANGE SCRIPT #105: 105_adding-new-table.sql
+
+START TRANSACTION;
+
+
+DROP TABLE PUNDIR;
+
+
+DELETE FROM CHANGELOG2 WHERE change_number = 105;
+
+COMMIT;
+
+-- END UNDO OF CHANGE SCRIPT #105: 105_adding-new-table.sql
+
