@@ -62,7 +62,7 @@
 		<profile>
 			<id>db-profile</id>
 			<activation>
-				<activeByDefault>true</activeByDefault>
+				<activeByDefault>false</activeByDefault>
 			</activation>
 			<build>
 				<plugins>
@@ -95,7 +95,7 @@
 		<profile>
                         <id>db-profile-two</id>
                         <activation>
-                                <activeByDefault>true</activeByDefault>
+                                <activeByDefault>false</activeByDefault>
                         </activation>
                         <build>
                                 <plugins>
